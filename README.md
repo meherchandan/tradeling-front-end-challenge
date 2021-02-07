@@ -21,7 +21,7 @@ $ npm install
 Start the app
 
 ```shell
-$ npm start
+$ npm run dev
 ```
 
 It Runs the app in the development mode.\
