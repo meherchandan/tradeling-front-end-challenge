@@ -1,0 +1,10 @@
+.not-found {
+    margin-top: 50px;
+    color: rgba(106, 115, 125);
+    margin-left: 20px;
+}
+.error {
+    color: red;
+    margin-top: 50px;
+    margin-left: 20px;
+}
