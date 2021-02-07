@@ -1,6 +1,8 @@
 # github-search-app
 
-This project provide a solution to search users and repositories from Github.
+## Problem and Solution statement
+
+This project provide a Front End Solution to search users and repositories from Github using the [github API](https://docs.github.com/en/rest/reference/). Application usage local storage to store the search results. This improves the application performance as well as user interaction. Results once searched will be cached in local storage as well as redux store and no request will be sent to server if same search is perfomed again even after browser refresh.
 
 ### Getting Started
 
@@ -59,6 +61,19 @@ Your app is ready to be deployed!
     └── store
         ├── actions
         └── reducers
+
+## Tech Stack
+
+- [React.js](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Redux](https://redux.js.org/) and [redux-persist](https://github.com/rt2zz/redux-persist)
+- [React Router](https://github.com/ReactTraining/react-router)
+- Vanilla CSS
+
+### TradeOff/Left Out
+
+- Unit tests are not covered due to lack of time
+- Browser responsiveness for mobile needs some work
 
 ### Create React App
 
