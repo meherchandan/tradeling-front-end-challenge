@@ -78,6 +78,7 @@ Your app is ready to be deployed!
 
 - Unit tests are not covered due to lack of time
 - Browser responsiveness for mobile needs some work
+- Type is defined as _any_ in few places. Need to study more on Typescript.
 
 ### Create React App
 
