@@ -130,7 +130,6 @@ export default function HomeContainer(): ReactElement {
                     </div>
                 </div>
             </div>
-
             {
                 searchText.length > 3 && <ResultContainer loadMore={loader.loadMore} error={loader.error} filter={selectedFilter} data={data} loader={loader.loading} handleLoadMore={handleLoadMore} />
             }

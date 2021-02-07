@@ -23,20 +23,15 @@ export const getUsersResult = (searchText: string, page: number = 1) => async (d
             dispatch(loadingEnd());
             if (data.length > 0) {
                 dispatch(userSuccessPayload(data, searchText, page));
-
             } else {
                 dispatch(loadMoreUnset())
             }
-            console.log(data);
-
         }).catch(() => {
             dispatch(errorOccured());
             dispatch(loadingEnd());
         })
-
     }
     catch (e) {
-        console.log("error catched");
         console.error(e);
         dispatch(errorOccured());
         dispatch(loadingEnd());

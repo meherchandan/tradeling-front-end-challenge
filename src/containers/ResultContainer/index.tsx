@@ -15,12 +15,9 @@ interface Props {
 }
 
 export default function ResultContainer({ handleLoadMore, loadMore, error, filter, data, loader }: Props): ReactElement {
-    console.log("loadMore ", loadMore);
-    console.log(" data && data.length > 0 ", data && data.length > 0);
     return (
         <>
             <div>
-
                 {
                     filter === USERS_LABEL && data && <UserContainer users={data} />
                 }
@@ -32,7 +29,6 @@ export default function ResultContainer({ handleLoadMore, loadMore, error, filte
                 }
             </div>
             {
-
                 !loader && data && data.length > 0 && loadMore && <Button label="Load More" handleClick={handleLoadMore} />
             }
             {
@@ -41,7 +37,6 @@ export default function ResultContainer({ handleLoadMore, loadMore, error, filte
             {
                 error && <div className="error">Some error occured. Please try again</div>
             }
-
         </>
     )
 }
