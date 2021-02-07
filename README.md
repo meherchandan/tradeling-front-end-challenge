@@ -4,6 +4,10 @@
 
 This project provide a Front End Solution to search users and repositories from Github using the [github API](https://docs.github.com/en/rest/reference/). Application usage local storage to store the search results. This improves the application performance as well as user interaction. Results once searched will be cached in local storage as well as redux store and no request will be sent to server if same search is perfomed again even after browser refresh.
 
+## Demo
+
+Application is deployed on heroku server. Please visit https://github-search-app-meher.herokuapp.com/
+
 ### Getting Started
 
 Clone this repo to your local machine using
